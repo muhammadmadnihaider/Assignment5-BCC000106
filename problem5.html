@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function cashier(amount) {
+        var hundred = Math.floor(amount / 100);
+        var fifty = Math.floor((amount - hundred * 100) / 50);
+        var ten = Math.floor((amount - (hundred * 100 + fifty * 50)) / 10);
+        return `You will have ${hundred} notes ${fifty} notes and ${ten} notes.`;
+      }
+      document.write(
+        cashier(Number(prompt("enter amount of cashier in hundreds")))
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function isWeekend(date) {
+        var day = new Date(date);
+        day = day.getDay();
+        if (day === 0 || day === 6) {
+          console.log(`it's weekend`);
+        } else {
+          console.log(` weekend is ${Math.abs(5 - day)} day away`);
+        }
+      }
+      isWeekend("Oct 14, 2019");
+    </script>
+  </body>
+</html>

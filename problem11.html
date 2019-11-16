@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = "as";
+
+      function isVowel(char) {
+        switch (char.toLowerCase()) {
+          case "a":
+            console.log("a");
+            return true;
+          case "e":
+            console.log("e");
+            return true;
+          case "i":
+            console.log("i");
+            return true;
+          case "o":
+            console.log("o");
+            return true;
+          case "u":
+            console.log("u");
+            return true;
+          default:
+            return false;
+        }
+      }
+
+      var vowel = isVowel(prompt("enter a single character"));
+      console.log(vowel);
+    </script>
+  </body>
+</html>

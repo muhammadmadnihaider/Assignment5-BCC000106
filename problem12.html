@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      while (true) {
+        var playagain = "yes";
+        var random = Math.floor(Math.random() * 100) + 1;
+        alert(random);
+        var turn = 3;
+        while (turn > 0) {
+          var guess = prompt(
+            "enter your guessing number, you have " + turn + " chances"
+          );
+          if (guess == random) {
+            alert("you won");
+            break;
+          } else {
+            alert("Incorrect, please try again ");
+          }
+          turn--;
+        }
+        if (turn == 0 && guess != random) {
+          playagain = prompt(
+            "you Lose the game, would you play again then reply 'yes' otherwise type 'no'"
+          );
+        } else {
+          playagain = prompt(
+            'you want to play again then type "yes" other wise "no"'
+          );
+        }
+        if (playagain == "no") {
+          break;
+        }
+      }
+      alert("thanks for playing with us");
+    </script>
+  </body>
+</html>

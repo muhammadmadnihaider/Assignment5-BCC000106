@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function age(dob) {
+        var date = new Date(dob);
+        var currentDate = new Date();
+        var year = currentDate.getFullYear() - date.getFullYear();
+        var months = currentDate.getMonth() - date.getMonth();
+        var days = currentDate.getDate() - date.getDate();
+        console.log(
+          `you are ${year} years and ${months} months and ${days} days old`
+        );
+      }
+      age("Jan 15, 1996");
+    </script>
+  </body>
+</html>
